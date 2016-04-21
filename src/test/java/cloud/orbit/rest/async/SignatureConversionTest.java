@@ -242,7 +242,7 @@ public class SignatureConversionTest
             }
         }
         assertEquals("Ljava/util/List<Ljava/lang/Object;>;", toMethodSignature(ClassWithParametrizedMethods.class.getDeclaredMethod("m31").getGenericReturnType()));
-        assertEquals("Lcom/ea/orbit/rest/async/SignatureConversionTest$ClassWithGenericMethods$AA<Ljava/lang/Object;>;", toMethodSignature(ClassWithParametrizedMethods.class.getDeclaredMethod("m32").getGenericReturnType()));
+        assertEquals("cloud/orbit/rest/async/SignatureConversionTest$ClassWithGenericMethods$AA<Ljava/lang/Object;>;", toMethodSignature(ClassWithParametrizedMethods.class.getDeclaredMethod("m32").getGenericReturnType()));
     }
 
 

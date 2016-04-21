@@ -192,7 +192,7 @@ public class RestClient
      * <p/>
      * The there are other implementation of rest proxies.
      * The special benefit of OrbitRestClient is that the interface method can return
-     * {@link java.util.concurrent.CompletableFuture} or {@link com.ea.orbit.concurrent.Task}
+     * {@link java.util.concurrent.CompletableFuture} or {@link cloud.orbit.concurrent.Task}
      * If that is the case, those methods will return immediately and the Future will be completed asynchronously.
      *
      * @param interfaceClass the jax-rs annotated interface class
@@ -524,14 +524,14 @@ public class RestClient
         ClassWriter cw = new ClassWriter(0);
         MethodVisitor mv;
 
-        String name = "com/ea/orbit/rest/async/RestInvocationCallback_" + (genericSignature.hashCode() & 0xffff);
+        String name = "cloud/orbit/rest/async/RestInvocationCallback_" + (genericSignature.hashCode() & 0xffff);
 
         String superName = superType.getInternalName();
         String signature = "L" + superName + "<" + genericSignature + ">;";
         cw.visit(Opcodes.V1_8, Opcodes.ACC_SUPER | Opcodes.ACC_PUBLIC, name, signature, superName, null);
 
 
-        cw.visitInnerClass(superName, "com/ea/orbit/rest/async/OrbitRestClient", "RestInvocationCallback", Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC);
+        cw.visitInnerClass(superName, "cloud/orbit/rest/async/OrbitRestClient", "RestInvocationCallback", Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC);
         {
             mv = cw.visitMethod(Opcodes.ACC_PUBLIC, "<init>", "()V", null, null);
             mv.visitCode();
