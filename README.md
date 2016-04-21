@@ -6,7 +6,7 @@ Orbit Async REST Client
 [![Maven Central](https://img.shields.io/maven-central/v/cloud.orbit/orbit-rest-client.svg)](https://repo1.maven.org/maven2/cloud/orbit/orbit-rest-client/)
 [![Javadocs](https://img.shields.io/maven-central/v/cloud.orbit/orbit-rest-client.svg?label=javadocs)](http://www.javadoc.io/doc/cloud.orbit/orbit-rest-client)
 [![Build Status](https://img.shields.io/travis/orbit/orbit-rest-client.svg)](https://travis-ci.org/orbit/orbit-rest-client)
-[![Gitter](https://img.shields.io/badge/style-Join_Chat-ff69b4.svg?style=flat&label=gitter)](https://gitter.im/orbit/orbit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://img.shields.io/badge/style-Join_Chat-ff69b4.svg?style=flat&label=gitter)](https://gitter.im/orbit/orbit)
 
 Allows calling JAX-RS REST interfaces with methods returning CompletableFuture or Orbit Task.
 This enables writing REST client code in a fluent asynchronous way.    
