@@ -369,12 +369,12 @@ public class RestClient
                 {
                     builder.async().method(httpMethod,
                             Entity.entity(entity, contentType),
-                            new InvocationCallback<Response>()
+                            new InvocationCallback<Object>()
                             {
                                 @Override
-                                public void completed(final Response response)
+                                public void completed(final Object obj)
                                 {
-                                    future.complete(null);
+                                    future.complete(obj);
                                 }
 
                                 @Override
