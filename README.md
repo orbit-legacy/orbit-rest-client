@@ -16,11 +16,9 @@ compatible with any client library that provides [javax.ws.rs.client.WebTarget](
 It has been tested with
 [jersey-client](https://jersey.java.net/documentation/latest/modules-and-dependencies.html#client-jdk).
 
-
 Developer & License
 ======
-This project was developed by [BioWare](http://www.bioware.com), a division of [Electronic Arts](http://www.ea.com) and is licensed under the [BSD 3-Clause License](LICENSE).
-
+This project was developed by [Electronic Arts](http://www.ea.com) and is licensed under the [BSD 3-Clause License](LICENSE).
 
 Examples
 ========
