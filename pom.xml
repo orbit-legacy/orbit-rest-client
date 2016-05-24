@@ -129,11 +129,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                         <configuration>
                             <artifactSet>
                                 <includes>
-                                    <include>org.googlecode.gentyref:gentyref</include>
+                                    <include>com.googlecode.gentyref:gentyref</include>
                                     <include>org.ow2.asm:asm</include>
                                 </includes>
                             </artifactSet>
-                            <keepDependenciesWithProvidedScope>true</keepDependenciesWithProvidedScope>
                             <relocations>
                                 <relocation>
                                     <pattern>org.objectweb.</pattern>
